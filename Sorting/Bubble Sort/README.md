@@ -24,19 +24,30 @@ If in an iteration no swapping occurs, this means that the list has been sorted,
 
 ## Comparison of time for the different bubble sorts
 1> Number of elements: 1000 (List is unsorted)
+  
   a) Bubble Sort: 2737100 ns
+  
   b) Optimized Bubble Sort: 800 ns
   
+  
 2> Number of elements: 1000 (List is sorted)
+  
   a) Bubble Sort: 1207300 ns
+  
   b) Optimized Bubble Sort: 400 ns
   
+  
 3> Number of elements: 100 (List is unsorted)
+  
   a) Bubble Sort: 38300 ns
+  
   b) Optimized Bubble Sort: 1000 ns
   
+  
 2> Number of elements: 100 (List is sorted)
+  
   a) Bubble Sort: 15700 ns
+  
   b) Optimized Bubble Sort: 400 ns
   
 ## Conclusion: 

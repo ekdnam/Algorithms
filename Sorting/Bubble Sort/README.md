@@ -27,28 +27,29 @@ The space complexity is O(1)
 If in an iteration no swapping occurs, this means that the list has been sorted, and thus the program stops.
 
 ## Comparison of time for the different bubble sorts
-1) Number of elements: 1000 (List is unsorted)
+
+A) Number of elements: 1000 (List is unsorted)
   
 Bubble Sort: 2737100 ns
   
 Optimized Bubble Sort: 800 ns
   
   
-2) Number of elements: 1000 (List is sorted)
+B) Number of elements: 1000 (List is sorted)
   
 Bubble Sort: 1207300 ns
   
 Optimized Bubble Sort: 400 ns
   
   
-3) Number of elements: 100 (List is unsorted)
+C) Number of elements: 100 (List is unsorted)
   
 Bubble Sort: 38300 ns
   
 Optimized Bubble Sort: 1000 ns
   
   
-4) Number of elements: 100 (List is sorted)
+D) Number of elements: 100 (List is sorted)
   
 Bubble Sort: 15700 ns
   

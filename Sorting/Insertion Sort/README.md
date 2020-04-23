@@ -40,6 +40,7 @@ Best case time complexity occurs when the list is sorted.
 
 ## Time :
 Number of elements: 1000
+
 A) Unsorted list: 993500 ns
 
 B) Sorted list: 4500 ns

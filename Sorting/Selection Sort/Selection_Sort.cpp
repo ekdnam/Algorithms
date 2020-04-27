@@ -70,4 +70,6 @@ int main()
 
 	cout << "\nSorted array is: " << endl;
 	display(arr, n);
+	
+	delete[]arr;
 }

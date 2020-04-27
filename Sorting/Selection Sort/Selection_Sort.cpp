@@ -72,4 +72,8 @@ int main()
 	display(arr, n);
 	
 	delete[]arr;
+	
+	cout << "Press any key to exit. ";
+	cin.get();
+	cin.ignore();
 }

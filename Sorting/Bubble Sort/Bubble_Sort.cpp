@@ -118,5 +118,9 @@ int main()
 	cout << "\nRunning time for optimized bubble sort: " << duration.count() << " ns" << endl;
 	
 	delete[]arr;
+	
+	cout << "Press any key to exit. ";
+	cin.get();
+	cin.ignore();
 }
 

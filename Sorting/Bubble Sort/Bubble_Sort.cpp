@@ -116,6 +116,7 @@ int main()
 	stop = high_resolution_clock::now();
 	duration = duration_cast<nanoseconds>(stop - start);
 	cout << "\nRunning time for optimized bubble sort: " << duration.count() << " ns" << endl;
-
+	
+	delete[]arr;
 }
 

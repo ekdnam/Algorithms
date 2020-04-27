@@ -70,4 +70,6 @@ int main()
 	cout << "Running time: " << duration.count() << " ns" << endl;
 
 	display(arr, n);
+	
+	delete[]arr;
 }

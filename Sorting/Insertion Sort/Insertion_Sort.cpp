@@ -66,13 +66,17 @@ int main()
 	auto start = high_resolution_clock::now();
 	insertion_sort(arr, n);
 	auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<nanoseconds>(stop - start);
-	cout << "Running time: " << duration.count() << " ns" << endl;
+	auto duration1 = duration_cast<microseconds>(stop - start);
+	cout << "Running time: " << duration1.count() << " microseconds" << endl;
+
 
 	display(arr, n);
-	
-	delete[]arr;
-	
+
+	start = high_resolution_clock::now();
+	insertion_sort(arr, n);
+	stop = high_resolution_clock::now();
+	auto duration2 = duration_cast<microseconds>(stop - start);
+	cout << "\n\nRunning time: " << duration2.count() << " microseconds" << endl;
 	cout << "Press any key to exit. ";
 	cin.get();
 	cin.ignore();

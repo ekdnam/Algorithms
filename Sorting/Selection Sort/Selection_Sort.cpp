@@ -65,14 +65,12 @@ int main()
 	auto start = high_resolution_clock::now();
 	selection_sort(arr, n);
 	auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<nanoseconds>(stop - start);
-	cout <<"\nRunning time of selection sort is: " << duration.count() <<" ns" << endl;
+	auto duration = duration_cast<microseconds>(stop - start);
+	cout <<"\nRunning time of selection sort is: " << duration.count() <<" microseconds" << endl;
 
 	cout << "\nSorted array is: " << endl;
 	display(arr, n);
-	
-	delete[]arr;
-	
+
 	cout << "Press any key to exit. ";
 	cin.get();
 	cin.ignore();

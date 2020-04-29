@@ -85,8 +85,8 @@ int main()
 	auto start = high_resolution_clock::now();
 	merge_sort(arr, 0, n - 1);
 	auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<nanoseconds>(stop - start);
-	cout << "\nRunning time: " << duration.count() << "ns" << endl;
+	auto duration = duration_cast<microseconds>(stop - start);
+	cout << "\nRunning time: " << duration.count() << " microseconds" << endl;
 
 	display_array(arr, n);
 

@@ -85,8 +85,8 @@ int main()
 	auto start = high_resolution_clock::now();
 	bubble_sort(arr, n);
 	auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<nanoseconds>(stop - start);
-	cout << "Running time: " << duration.count() << " ns" <<endl;
+	auto duration = duration_cast<microseconds>(stop - start);
+	cout << "Running time: " << duration.count() << " microseconds." <<endl;
 
 	//display the contents of array
 	cout << "The sorted array is: " << endl;
@@ -94,33 +94,32 @@ int main()
 
 	cout << "\n\nFinding difference in running time by calling the the normal bubble sort function" << endl <<"as well as optimized bubble sort" << endl;
 
-	start = high_resolution_clock::now();
+	auto start2 = high_resolution_clock::now();
 	bubble_sort(arr, n);
-	stop = high_resolution_clock::now();
-	duration = duration_cast<nanoseconds>(stop - start);
-	cout << "\nRunning time for already sorted list and normal bubble sort: " << duration.count() << " ns" << endl;
+	auto stop2 = high_resolution_clock::now();
+	auto duration2 = duration_cast<microseconds>(stop2 - start2);
+	cout << "\nRunning time for already sorted list and normal bubble sort: " << duration2.count() << " microseconds" << endl;
 	
-	start = high_resolution_clock::now();
+	auto start3 = high_resolution_clock::now();
 	optimized_bubble_sort(arr, n);
-	stop = high_resolution_clock::now();
-	duration = duration_cast<nanoseconds>(stop - start);
-	cout << "\nRunning time for already sorted list and optimized bubble sort: " << duration.count() << " ns" << endl;
+	auto stop3 = high_resolution_clock::now();
+	auto duration3 = duration_cast<microseconds>(stop3 - start3);
+	cout << "\nRunning time for already sorted list and optimized bubble sort: " << duration3.count() << " microseconds" << endl;
 
 	cout << "Enter values again, first number of elements: " << endl;
 	cin >> n;
 	cout << "Enter values: " << endl;
 	get_input(arr, n);
 
-	start = high_resolution_clock::now();
+	auto start4 = high_resolution_clock::now();
 	optimized_bubble_sort(arr, n);
-	stop = high_resolution_clock::now();
-	duration = duration_cast<nanoseconds>(stop - start);
-	cout << "\nRunning time for optimized bubble sort: " << duration.count() << " ns" << endl;
-	
-	delete[]arr;
+	auto stop4 = high_resolution_clock::now();
+	auto duration4 = duration_cast<microseconds>(stop4 - start4);
+	cout << "\nRunning time for optimized bubble sort: " << duration4.count() << " microseconds" << endl;
 	
 	cout << "Press any key to exit. ";
 	cin.get();
 	cin.ignore();
+
 }
 

@@ -1,1 +1,3 @@
 # Merge Sort
+
+- Aditya Mandke

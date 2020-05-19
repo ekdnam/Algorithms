@@ -49,3 +49,5 @@ B) Sorted list: 4500 ns
 <a href = "https://www.geeksforgeeks.org/insertion-sort/">Geeks for Geeks</a>
 
 CLRS
+
+- Aditya Mandke

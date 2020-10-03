@@ -16,8 +16,8 @@ def bubbleSort(array):
 
 
 # Driver code to test above
-arr = [64, 34, 25, 12, 22, 11, 90]
-
+print("Enter the Array:")
+arr = [int(x) for x in input().split()]
 bubbleSort(arr)
 
 print("Sorted array is:")

@@ -77,13 +77,23 @@ void Graph::BFS(int s)
 
 int main() 
 { 
-	Graph g(4); 
-	g.addEdge(0, 1); 
-	g.addEdge(0, 2); 
-	g.addEdge(1, 2); 
-	g.addEdge(2, 0); 
-	g.addEdge(2, 3); 
-	g.addEdge(3, 3); 
+	int n;
+	cout <<"Enter number of Nodes: ";
+	cin >> n;
+
+	int edge;
+	cout <<"Enter number of egdes: ";
+	cin >> edge;
+
+	Graph g(n);
+
+	for(int i = 0; i < egde; i++)
+	{
+		int temp_node1, temp_node2;
+		cin >> temp_node1;
+		cin >> temp_node2;
+		g.addEdge(temp_node1, temp_node2);
+	}
 
 	cout << "Following is Breadth First Traversal "
 		<< "(starting from vertex 2) \n"; 

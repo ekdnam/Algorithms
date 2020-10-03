@@ -12,9 +12,14 @@ int search(int arr[], int n, int x)
   
 int main(void) 
 { 
-    int arr[] = { 2, 3, 4, 10, 40 }; 
-    int x = 10; 
-    int n = sizeof(arr) / sizeof(arr[0]); 
+    int n; //number of elements in array
+    cin>>n;
+    int arr[n]; 
+    //storing the elements in array 
+    for(int i=0;i<n;i++)
+      cin>>arr[i];
+    int x; //element to be searched
+    cin>>x;
     int result = search(arr, n, x); 
    (result == -1)? cout<<"Element is not present in array" 
                  : cout<<"Element is present at index " <<result; 

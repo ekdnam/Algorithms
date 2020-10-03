@@ -1,3 +1,0 @@
-# Binary Search
-
-- Aditya Mandke

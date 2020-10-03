@@ -1,3 +1,0 @@
-# Sorting
-
-- Aditya Mandke

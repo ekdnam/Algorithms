@@ -65,10 +65,14 @@ int fibonacciSearch(int arr[], int x, int n)
 /* driver function */
 int main(void) 
 { 
-    int arr[] = {10, 22, 35, 40, 45, 50, 80, 82, 
-                 85, 90, 100}; 
-    int n = sizeof(arr)/sizeof(arr[0]); 
-    int x = 85; 
+    int n, x, i;
+    scanf("%d %d",&n,&x);
+  
+     int arr[n]; 
+    for(i=0; i<n; i++){
+      scanf("%d ",&arr[i]);
+    }    
+  
     printf("Found at index: %d", 
            fibonacciSearch(arr, x, n)); 
     return 0; 

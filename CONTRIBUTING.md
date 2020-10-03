@@ -1,4 +1,12 @@
-# How to Collaborate:
+# Contributions
+
+## Guidelines for Merging
+
+The PR which will be having the specific file name as given in the issue, the one whose commit descriptions are relevant, and the code is readable, would be merged.
+
+For docs, make sure that you use markdown syntax. Checkout these links: [Markdown Guide](https://www.markdownguide.org/), [Markdown Cheat-Sheet](https://www.markdownguide.org/cheat-sheet/).
+
+## How to Collaborate:
 
 1. Fork the repository to your own GitHub account.
 
@@ -21,9 +29,6 @@ $ git add <filename>
 ```
 
 5. Commit you changes with a commit message containing your name, file(s) worked upon, changes added.
-```
-$ git commit -m "Name| files| Changes"
-```
 
 6. Push changes to your forked repository
 ```
@@ -31,7 +36,7 @@ $ git push -u origin branchname
 ```
 7. Create a pull request to the upstream repository.
 
-# Synchronize forked repository with Upstream repository
+## Synchronize forked repository with Upstream repository
 
 1. Create upstream as our repository
 ```

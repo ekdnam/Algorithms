@@ -1,6 +1,6 @@
 # Algorithms
 
-![Algorithms](./images/nasa-unsplash.jpg)
+![Algorithms](./images/algorithms.jpg)
 
 An attempt to aggregate all the various algorithms.
 

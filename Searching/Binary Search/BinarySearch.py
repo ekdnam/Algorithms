@@ -1,3 +1,5 @@
+#iertative binary search v1
+
 def binary_search(arr,low,high,target):
 
     while low<=high:

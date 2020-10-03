@@ -35,6 +35,7 @@ We create two lists – Open List and Closed List (just like Dijkstra Algorithm)
        parents to q
    
     d) for each successor
+        
         i) if successor is the goal, stop search
           successor.g = q.g + distance between 
                               successor and q

@@ -1,3 +1,5 @@
+# Fibonacci Search
+
 Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.
 
 Similarities with Binary Search:
@@ -6,7 +8,7 @@ Similarities with Binary Search:
     A Divide and Conquer Algorithm.
     Has Log n time complexity.
 
-Differences with Binary Search:
+## Differences with Binary Search:
 
     1.Fibonacci Search divides given array in unequal parts
 
@@ -15,7 +17,7 @@ Differences with Binary Search:
     3.Fibonacci Search examines relatively closer elements in subsequent steps. So when input array is big that cannot fit in CPU cache or even in RAM, Fibonacci Search can be useful.
 
 
-ALGORITHM:
+## ALGORITHM:
 
     Let the searched element be x.
 

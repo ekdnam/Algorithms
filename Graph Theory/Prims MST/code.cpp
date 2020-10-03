@@ -1,6 +1,3 @@
-// A C++ program for Prim's Minimum 
-// Spanning Tree (MST) algorithm. The program is 
-// for adjacency matrix representation of the graph 
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -104,4 +101,3 @@ int main()
 	return 0; 
 } 
 
-// This code is contributed by rathbhupendra

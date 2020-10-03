@@ -1,3 +1,3 @@
-# Merge Sort
+# Merge Sort - Python
 
-- Aditya Mandke
+<!--- Readme --->

@@ -2,7 +2,6 @@
 
 ![Algorithms](./images/algorithms.jpg)
 
-An attempt to aggregate all the various algorithms used in CS.
 
 ## What you will gain by contributing here?
 

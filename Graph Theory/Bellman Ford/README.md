@@ -3,3 +3,4 @@ Bell man ford steps
 (1) init dist[vertices] =INT_MAX, dist[src] =0
 (2) relax all the edges V-1 times [most important]
 (3) Negative wt cycle detection 
+it's time taking but powerful algo.

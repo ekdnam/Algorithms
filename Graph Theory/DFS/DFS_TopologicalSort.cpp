@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+// DFS Algorithm
 void DFS(vector<int> a[], stack<int> &s,vector<int> &visited, int i){
     visited[i] = true;
     for(x : a[i]){
@@ -11,6 +11,7 @@ void DFS(vector<int> a[], stack<int> &s,vector<int> &visited, int i){
     }}
     
 }
+// Topological Sort
 // V is number of vertices and adj is adjacency list
 vector<int> topologicalSort(int V, vector<int> adj[]) {
     vector<int> ts;
@@ -30,20 +31,22 @@ vector<int> topologicalSort(int V, vector<int> adj[]) {
     return ts;
 }
 
+// Driver Code 
 int main()
 {
-int n,e;
-int u,v;
+int n, e, u, v;
 cin>>n>>e;
 vector<int> adj_list[n];
+    
 for(int i=0;i<e;i++){
 cin>>u>>v;
 adj_list[u].push_back(v);
 }
 vector<int> result = topologicalSort(n, adj_list);
+    
 for(int i=0;i<n;i++){
 cout<<result[i]<<" ";
 }
-
+    
 }
 

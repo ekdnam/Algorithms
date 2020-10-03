@@ -18,17 +18,17 @@ int main()
     vector<int> arr;
     int n;
     int x;
-    cout<<"Enter the number of elements in input :   ";
-    cin>>n;
-    for(int i=0;i<n;i++)
+    cout << "Enter the number of elements in input :   ";
+    cin >> n;
+    for(int i = 0; i < n ; i++)
     {
-        cout<<"Enter the input value of element "<<i+1<<" : ";
+        cout << "Enter the input value of element "<<i+1<<" : ";
         int p;
-        cin>>p;
+        cin >> p;
         arr.push_back(p);
     }
-    cout<<"Enter the value to be searched:   ";
-    cin>>x;
+    cout << "Enter the value to be searched:   ";
+    cin >> x;
     int index = search(arr, n, x); 
     if (index == -1) 
         cout << "Element is not present in the array"; 

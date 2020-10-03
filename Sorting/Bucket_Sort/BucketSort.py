@@ -28,11 +28,8 @@ Eg : If we have an array [1, 3, 3, 8, 5] and our bucket condition is:
 >>  Runtime : O(n)
 '''
 
-## numbers is our array, 
-## Assumption about our array - 
-# All values are floating point values between 0.0 and 1.0.
-# This helps our bucketing scheme. For different data, we will have different schemes  
-numbers = [0.2, 0.10, 0.32, 0.45, 0.36, 0.90, 0.82, 0.47, 0.71, 0.76, 0.28, 0.12]
+# This numbers array is for default purposes. Uncomment to use.
+# numbers = [0.2, 0.10, 0.32, 0.45, 0.36, 0.90, 0.82, 0.47, 0.71, 0.76, 0.28, 0.12]
 
 def bucketSort(numbers):
     ''' Implements Bucket Sort Algorithm, and returns the sorted array
@@ -66,4 +63,16 @@ def bucketSort(numbers):
     return sortedNumbers
 
 # testing Code
-print(bucketSort(numbers))
+# For purpose of this code, enter numbers only between (0.0 and 1.0)
+
+if __name__ == "__main__":
+
+## numbers is our array, 
+## Assumption about our array - 
+# All values are floating point values between 0.0 and 1.0.
+# This helps our bucketing scheme. For different data, we will have different schemes
+    numbers = input("Enters numbers >= 0 and  < 1 for sorting: ")
+    numbers = numbers.split(" ")
+    numbers = list(map(float, numbers))  ## Convert to list of floats
+
+    print(bucketSort(numbers))

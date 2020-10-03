@@ -10,7 +10,7 @@ using namespace std;
 void dfs(int s, vector<int> g[], bool vis[])
 {
 
-    //Mark visited
+    //Mark current node as visited
     vis[s]=true;
     cout<<s<<" ";
     for(auto u: g[s])
@@ -28,13 +28,16 @@ int main()
     cin>>T;
     while(T--)
     {
-
+        //N is no of nodes
+        //E is no of edges
         int N, E;
         cin>>N>>E;
 
+        //Create vector to store graph
         vector<int> g[N];
         bool vis[N];
 
+        //memset is used to mark all nodes unvisited initially (It initialises all the values of vis[]=false)
         memset(vis, false, sizeof(vis));
 
         for(int i=0;i<E;i++)
@@ -45,6 +48,7 @@ int main()
             g[v].push_back(u);
         }
 
+        //Call DFS with starting node 0 and graph g
         dfs(0,g,vis);
 
         cout<<endl;

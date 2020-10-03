@@ -5,7 +5,7 @@
 int min(int x, int y) { return (x<=y)? x : y; } 
   
 /* Returns index of x if present,  else returns -1 */
-int fibMonaccianSearch(int arr[], int x, int n) 
+int fibonacciSearch(int arr[], int x, int n) 
 { 
     /* Initialize fibonacci numbers */
     int fibMMm2 = 0;   // (m-2)'th Fibonacci No. 
@@ -70,6 +70,6 @@ int main(void)
     int n = sizeof(arr)/sizeof(arr[0]); 
     int x = 85; 
     printf("Found at index: %d", 
-            fibMonaccianSearch(arr, x, n)); 
+           fibonacciSearch(arr, x, n)); 
     return 0; 
 }

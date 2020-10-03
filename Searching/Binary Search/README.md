@@ -21,5 +21,5 @@ Otherwise narrow it to the second upper half
 
 ## High Level Flow Of The Algorithm
 
-![BinarySearch](BinarySearch.jpg)
+![BinarySearch](BinarySearch-1.jpg)
 

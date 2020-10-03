@@ -1,6 +1,6 @@
 # Bucket Sort Algorithm
 
-Usually, the best algorithm we have when using comparison based algorithms(which compares elements pairwise) is Merge Sort which takes about $O(nlog(n))$. 
+Usually, the best algorithm we have when using comparison based algorithms(which compares elements pairwise) is Merge Sort which takes about ![O(n log(n))](https://bit.ly/2GkOm1W)
 
 However if we know something about the data, then we can do sorting even faster.
 
@@ -20,13 +20,10 @@ Steps for Bucket Sort:
 * Then it sorts the **buckets** individually.(Usually, insertion sort is used).
 * Finally it merges the buckets one by one, starting with the bucket with the smalles values(So that in one linear pass, the array can be merged)
 
-This allows the algorithm to achieve $O(n)$ run time.
+This allows the algorithm to achieve ![O(n)](https://bit.ly/2Gec8wJ) run time.
 
 Sources:
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Bucket_sort)
 
 ### Contributed by Sandip Dutta
-
-
-

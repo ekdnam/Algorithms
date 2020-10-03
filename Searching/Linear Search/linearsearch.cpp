@@ -1,5 +1,7 @@
 // Linear search
 // A.particular.element.in.array
+#include<iostream>
+using namespace std;
 
 int main() {
     int n, key;

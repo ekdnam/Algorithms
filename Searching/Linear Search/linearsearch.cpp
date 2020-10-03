@@ -1,5 +1,7 @@
 // Linear search
 // A.particular.element.in.array
+#include<iostream>
+using namespace std;
 
 int main() {
     int n, key;
@@ -13,7 +15,7 @@ int main() {
 
 // Ask for the element we want to search
     
-    cout << "Engter the element you want to search";
+    cout << "Enter the element you want to search";
     cin >> Key;
 
 /// Find out the index of the element thatt you want to search
@@ -23,7 +25,7 @@ int main() {
  {
      if(a[i]==key)
      {
-     cout << Key <<"found at"<< i <<"index";
+     cout << Key << "found at" << i <<"index";
      break;
      }
  }
@@ -34,11 +36,4 @@ int main() {
  return 0;
 
 }
-
-
-
-
-
-
-
 }

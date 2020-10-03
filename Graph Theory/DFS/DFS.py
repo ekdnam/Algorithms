@@ -52,8 +52,8 @@ for i in range(0,E):
   x, y = input("Enter a edges value: ").split()
   g.addEdge(x, y) 
 
-  
-print("Following is DFS from (starting from vertex 2)") 
-g.DFS(2) 
+  v = int(input("Enter the number of vertex, where you want to start : "))
+print("Following is DFS from starting from vertex ",v) 
+g.DFS(v) 
   
 # This code is contributed by Avnish Singh

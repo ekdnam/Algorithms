@@ -16,8 +16,8 @@ int main() {
     cout << "Engter the element you want to search";
     cin >> Key;
 
-// Find out the index of the element thatt you want to search
-// Linear search algorithm
+/// Find out the index of the element thatt you want to search
+/// Linear search algorithm
 
  for(int i=0;i<=n;i++)
  {

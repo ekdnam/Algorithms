@@ -14,4 +14,4 @@ Linear search algorithms check every record for the one associated with a target
 linear seach is algorithm that helps us to find a particular element in array.
 The time complexity of above algorithm is O(n).
 
-Linear search is rarely used practically because other search algorithms such as the binary search algorithm and hash tables allow significantly faster searching comparison to Linear search.
+Linear search is rarely used practically because other search algorithms such as the binary search algorithm and hash tables allow significantly faster searching comparison to Linear search

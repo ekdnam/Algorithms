@@ -1,13 +1,13 @@
 # **Linear Search** 
 
--> Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection. This algorithm work on Linear Data structures such as Arrays.
+Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection. This algorithm works on Linear Data structures such as Arrays.
 
 
 ## _EXAMPLE for linear search_
 
-For example :- we are searching for number **_33_** in the given array. we will begin searching number  **_33_**  from starting of the given array till end.and As soon as we find  first number  **_33_** in array we stop searching further in the array.
+For example: We are searching for number **_33_** in the given array. We will begin searching number  **_33_**  from starting of the given array till end. And As soon as we find  first number  **_33_** in array we stop searching further in the array.
 
-![](https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif)
+![Gif](https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif)
 
 
 # **Simple algorithm for linear search**
@@ -29,7 +29,6 @@ Linear Search ( Array A, Value x)
 **Step 7**: Print element not found
 
 **Step 8**: Exit
-
 
 
 

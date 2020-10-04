@@ -73,7 +73,7 @@ def bucketSort(numbers):
 if __name__ == "__main__":
 
     ## numbers is our array
-    numbers = input("Enters number: ")
+    numbers = input("Enter numbers, with spaces in between. Once array is created, press Enter: ")
     numbers = numbers.split(" ")
     numbers = list(map(float, numbers))  ## Convert to list of floats
 

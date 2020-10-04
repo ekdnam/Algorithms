@@ -66,14 +66,24 @@ public:
 };
 
 int main(){
+    //using adjacency list representation
 	Graph<int>g;
-	g.addEdge(1,2,1);
-	g.addEdge(1,3,4);
-	g.addEdge(2,3,1);
-	g.addEdge(3,4,2);
-	g.addEdge(1,4,7);
+	//number of edges
+	int n;
+	cin>>n;
+	//u and v are the vertex and there is an edge connecting them whose weight/distance is dist 
+	int u,v,dist;
+	
+	for(int i=0;i<n;i++){
+	  cin>>u>>v>>dist;
+	  g.addEdge(u,v,dist);
+	}
+    //print adjacency list
 	g.printAdj();
-	g.dijsktraSSSP(1);
+    //source from which we want to find distances to all other nodes 
+    int src;
+    cin>>src;
+	g.dijsktraSSSP(src);
 
 	return 0;
 }

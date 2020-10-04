@@ -37,6 +37,6 @@ Building this array of predecessors is very simple: for each successful relaxati
 ```
 p[to]=v
 ``` 
-**Time Complexity of Dijkstra Algorithm
+**Time Complexity of Dijkstra Algorithm**
 
 Time complexity of Dijkstra's Algorithm changes with the method of implementation of the priority queue. Using Min Heap time complexity of O(V + E log V) can be acheived. Using array implementation of priority queue time complexity of O(V^2) can be acheived. Most efficient implemenatation of priority queue in terms of time complexity is using Fibonacci Heap which yeilds results in O(E + V log V).

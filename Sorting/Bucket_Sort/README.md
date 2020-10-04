@@ -1,6 +1,6 @@
 # Bucket Sort Algorithm
 
-Usually, the best algorithm we have when using comparison based algorithms(which compares elements pairwise) is Merge Sort which takes about O(n log(n))
+Usually, the best algorithm we have when using comparison based algorithms(which compares elements pairwise) is Merge Sort which takes about O(nlog(n))
 
 However if we know something about the data, then we can do sorting even faster.
 

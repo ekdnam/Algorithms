@@ -12,7 +12,7 @@ About Bucket Sort
 
 >   Bucket Sort first places each element into a specific bucket.
     We can think of a bucket as a container which contains some similar
-    elements based on a property.
+    elements based on a property.                                         
 
 Eg : If we have an array [1, 3, 3, 8, 5] and our bucket condition is:
     " <= 3", then we will have the following buckets.
@@ -31,6 +31,9 @@ Eg : If we have an array [1, 3, 3, 8, 5] and our bucket condition is:
 # This numbers array is for default purposes. Uncomment to use.
 # numbers = [0.2, 0.10, 0.32, 0.45, 0.36, 0.90, 0.82, 0.47, 0.71, 0.76, 0.28, 0.12]
 
+from math import exp # For bucketting purposes
+
+
 def bucketSort(numbers):
     ''' Implements Bucket Sort Algorithm, and returns the sorted array
     @ Args:
@@ -38,19 +41,22 @@ def bucketSort(numbers):
     @ Return:
         > sortedNumbers(list) - Sorted Version of arr
     '''
-    # here we will split into 10 buckets    
-    numberOfBuckets = 10
+
+    # here we will split into 11 buckets    
+    numberOfBuckets = 11
 
     sortedNumbers = []  # The final array to be returned
 
     allBuckets = {i:[] for i in range(numberOfBuckets)} # Stores all the buckets
 
     # Bucketing Scheme:
-    # arr[element] -> bucket[int(arr[element] * numberOfBuckets)]
+    # numbers[element] --> (numberOfBuckets - 1) / (1.0 + exp(-element))
+    # This squishes all inputs in the range [0, 10]
 
     # Bucket Here
     for element in numbers:
-        allBuckets[int(element * numberOfBuckets)].append(element)
+        bucketNumber = int((numberOfBuckets - 1) / (1.0 + exp(-element))) 
+        allBuckets[bucketNumber].append(element)
     
     # Make final list using the buckets
     # In Python(from 3.7), the values are retrieved from the dictionary 
@@ -63,15 +69,11 @@ def bucketSort(numbers):
     return sortedNumbers
 
 # testing Code
-# For purpose of this code, enter numbers only between (0.0 and 1.0)
 
 if __name__ == "__main__":
 
-## numbers is our array, 
-## Assumption about our array - 
-# All values are floating point values between 0.0 and 1.0.
-# This helps our bucketing scheme. For different data, we will have different schemes
-    numbers = input("Enters numbers >= 0 and  < 1 for sorting: ")
+    ## numbers is our array
+    numbers = input("Enters number: ")
     numbers = numbers.split(" ")
     numbers = list(map(float, numbers))  ## Convert to list of floats
 

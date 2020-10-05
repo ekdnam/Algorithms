@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+
+public void BubbleSort()
 {
 	int a[50], n, i, j, temp;
 	printf("Enter the size of array maximum size allowed is 50: ");

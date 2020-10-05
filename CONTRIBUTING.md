@@ -1,5 +1,9 @@
 # Contributions
 
+## Making a PR ##
+
+Make sure that you fill out the relevant details in the PR.
+
 ## Guidelines for Merging
 
 The PR which will be having the specific file name as given in the issue, the one whose commit descriptions are relevant, and the code is readable, would be merged.

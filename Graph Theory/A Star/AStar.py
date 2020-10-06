@@ -152,7 +152,7 @@ def main():
     heuristics['Wurzburg'] = 153
     heuristics['Zurich'] = 157
     heuristics['Ulm'] = 0
-    # Run the search algorithm
+    ## Run the search algorithm
     path = astar_search(graph, heuristics, 'Frankfurt', 'Ulm')
     print(path)
     print()

@@ -1,3 +1,4 @@
+# Tower of hanoi
 Tower of Hanoi, is a mathematical puzzle which consists of three towers (pegs) and more than one rings is as depicted −
 These rings are of different sizes and stacked upon in an ascending order, i.e. the smaller one sits over the larger one. There are other variations of the puzzle where the number of disks increase, but the tower count remains the same.
 Rules-

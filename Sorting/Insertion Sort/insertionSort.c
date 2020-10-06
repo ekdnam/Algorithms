@@ -36,6 +36,10 @@ int main(){
     // Taking number of Elements in the array from the user
     printf("Number of elements: ");
 	scanf("%d",&NoOfElements);
+    if(NoOfElements==0){
+        printf("You entered 0. Nothing to Sort\n");
+        return 0;
+    }
     arr=(int*)malloc(NoOfElements*sizeof(int));
 
     //calling input function which will take elements of array from the user

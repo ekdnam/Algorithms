@@ -33,14 +33,18 @@ void printArray(int *arr, int n){
 int main(){
 
     int *arr, NoOfElements;
+    // Taking number of Elements in the array from the user
     printf("Number of elements: ");
 	scanf("%d",&NoOfElements);
     arr=(int*)malloc(NoOfElements*sizeof(int));
 
+    //calling input function which will take elements of array from the user
     input(arr, NoOfElements);
 
+    //callling function insertionSort which will sort the array using insertionSort
     insertionSort(arr, NoOfElements); 
     printf("Sorted array is: \n"); 
+    //Printing sorted array
     printArray(arr, NoOfElements); 
 
     return 0; 

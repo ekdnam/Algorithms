@@ -8,7 +8,7 @@ class Graph{
     map<T, list<T> > l;
 
 public:
-voide addegde(int x, int y){
+void addEgde(int x, int y){
     l[x].push_back(y);
     l[y].push_back(x);
 
@@ -20,9 +20,9 @@ void bfs(T src)
     queue<T> q;
 
     q.push(src);
-    visited[src] =true;
+    visited[src] = true;
 
-    while(___){
+    while(!q.empty()){
         T node = q.front();
         q.pop();
 
@@ -31,7 +31,7 @@ void bfs(T src)
             if(!visited[nbr]){
             q.push(nbr);
             //make that nbr as visited
-            viisted[nbr] = true;
+            visited[nbr] = true;
         }
         }
     }

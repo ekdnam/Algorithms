@@ -1,3 +1,4 @@
+#include <iostream>
 using namespace std;
 // Recursive function to return gcd of a and b
 int gcd(int a, int b)
